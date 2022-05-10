@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Envía tu noticia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body id="formulario">
     <header>
@@ -13,6 +14,17 @@
       </nav>
     </header>
 
-    <main>(poner aquí el formulario)</main>
+    <main>
+      <form action="./logins.js" method="get">
+        <fieldset>
+          <legend>Cubre estos datos para enviar tu noticia</legend>
+          <label for="id_Text">Título de la noticia</label>
+          <input type="text" name="text" id="id_Text">
+          <label for="id_TextArea">Texto de la noticia</label>
+          <textarea name="textAare" id="id_TextArea" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
   </body>
 </html>
